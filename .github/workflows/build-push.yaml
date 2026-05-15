@@ -54,6 +54,6 @@ jobs:
 
             docker run -d \
               --name devopsdays \
-              -p 8080:80 \
+              -p 80:80 \
               --restart unless-stopped \
               ${{ secrets.DOCKERHUB_USERNAME }}/devopsdays:latest
